@@ -16,34 +16,22 @@ Accessible tabs specification is defined in WAI-ARIA Authoring Practices 1.1.
 
 ## Terms:
 
- - **tabs or tabbed Interface:**a set of tab elements and their associated tab panels.
- - **tab list:**a set of tab elements contained in a tablist element.
- - **tab:**an element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
- - **tabpanel**: ** **section of content associated with a tab header.
+* **tabs or tabbed Interface:**a set of tab elements and their associated tab panels.
+* **tab list:**a set of tab elements contained in a tablist element.
+* **tab:**an element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
+* **tabpanel**: ** **section of content associated with a tab header.
 
 ## Design Patterns
 
-
-  [2]: https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html
-  [3]: https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html
-  [4]: http://hanshillen.github.io/jqtest/?tabid=tabs
-  [5]: https://dequeuniversity.com/library/aria/tabpanels-accordions/tabpanel
-  [6]: https://dequeuniversity.com/library/aria/tabpanels-accordions/sf-responsive-tabs-to-accordion
-  [7]: http://oaa-accessibility.org/example/34/
-  [8]: http://oaa-accessibility.org/example/36/
-  [9]: http://api.jqueryui.com/tabs/
-  [10]: https://frend.co/components/tabs/
-
-
-[WAI ARIA practices - Tabs With Automatic Activation][2]
-[WAI ARIA practices - Tabs With Manual Activation][3]
-[Accessible jQuery-ui Components][4]
-[Tabpanel widget by Deque]
-[5][Responsive Tabs to Accordion by Deque]
-[6][Open Ajax Accessibility ex. 34 - Tab Panel: ARIA CSS Selectors]
-[7][Open Ajax Accessibility ex. 36 - Tab Panel: ARIA CSS Selectors]
-[8][jQuery documentation][9]
-[Frend - A collection...][10]
+* [WAI ARIA practices - Tabs With Automatic Activation](https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html)
+* [WAI ARIA practices - Tabs With Manual Activation](https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html)
+* [Accessible jQuery-ui Components](http://hanshillen.github.io/jqtest/?tabid=tabs)
+* [Tabpanel widget by Deque](https://dequeuniversity.com/library/aria/tabpanels-accordions/tabpanel)
+* [Responsive Tabs to Accordion by Deque](https://dequeuniversity.com/library/aria/tabpanels-accordions/sf-responsive-tabs-to-accordion)
+* [Open Ajax Accessibility ex. 34 - Tab Panel: ARIA CSS Selectors](http://oaa-accessibility.org/example/34/)
+* [Open Ajax Accessibility ex. 36 - Tab Panel: ARIA CSS Selectors](http://oaa-accessibility.org/example/36/)
+* [jQuery documentation](http://api.jqueryui.com/tabs/)
+* [Frend - A collection...](https://frend.co/components/tabs/)
 
 ## Accessibility
 
@@ -52,35 +40,35 @@ Accessible tabs specification is defined in WAI-ARIA Authoring Practices 1.1.
 The tablist takes up one tab stop in the tab order. It can be navigated with the following shortcuts:
 
 * **Left or Up Arrow**: Show the previous tab
-*  **Right or Down Arrow**: Show the next tab
-*  **Home**: Show the first tab
-*  **End**: Show the last tab
-*  **Alt + Page Down** (from anywhere inside the tab panel): Select the previous tab and move focus to the tablist
-*  **Alt + Page Up** (from anywhere inside the tab panel): Select the next tab and move focus to the tablist
+* **Right or Down Arrow**: Show the next tab
+* **Home**: Show the first tab
+* **End**: Show the last tab
+* **Alt + Page Down** (from anywhere inside the tab panel): Select the previous tab and move focus to the tablist
+* **Alt + Page Up** (from anywhere inside the tab panel): Select the next tab and move focus to the tablist
 
 **For the tab list:**
 
-*  **Tab**: When the tab list is receiving focus, places focus on the active tab element. When the tab list contains the focus, moves focus to the next element in the page tab sequence outside the tablist, which is typically either the first focusable element inside the tab panel or the tab panel itself.
+* **Tab**: When the tab list is receiving focus, places focus on the active tab element. When the tab list contains the focus, moves focus to the next element in the page tab sequence outside the tablist, which is typically either the first focusable element inside the tab panel or the tab panel itself.
 
 **When focus is on a tab element in a horizontal tab list:**
 
-*  **Left Arrow**: moves focus to the previous tab. If focus is on the first tab, moves focus to the last tab. Optionally, activates the newly focused tab (See note below).
-*  **Right Arrow**: Moves focus to the next tab. If focus is on the last tab element, moves focus to the first tab. Optionally, activates the newly focused tab (See note below).
+* **Left Arrow**: moves focus to the previous tab. If focus is on the first tab, moves focus to the last tab. Optionally, activates the newly focused tab (See note below).
+* **Right Arrow**: Moves focus to the next tab. If focus is on the last tab element, moves focus to the first tab. Optionally, activates the newly focused tab (See note below).
 
 **When focus is on a tab in a tablist with either horizontal or vertical orientation:**
 
-*  **Space or Enter**: Activates the tab if it was not activated automatically on focus.
-*  **Home** (Optional): Moves focus to the first tab
-*  **End** (Optional): Moves focus to the last tab.
-*  **Shift + F10**: If the tab has an associated pop-up menu, opens the menu.
-*  **Delete** (Optional): If deletion is allowed, deletes (closes) the current tab element and its associated tab panel. If any tabs remain, sets focus to the tab following the tab that was closed and activates the newly focused tab. Alternatively, or in addition, the delete function is available in a context menu.
+* **Space or Enter**: Activates the tab if it was not activated automatically on focus.
+* **Home** (Optional): Moves focus to the first tab
+* **End** (Optional): Moves focus to the last tab.
+* **Shift + F10**: If the tab has an associated pop-up menu, opens the menu.
+* **Delete** (Optional): If deletion is allowed, deletes (closes) the current tab element and its associated tab panel. If any tabs remain, sets focus to the tab following the tab that was closed and activates the newly focused tab. Alternatively, or in addition, the delete function is available in a context menu.
 
 ### Screenreader Interaction
 
-*  Tab must be announce as "Tab".
-*  Tab label must be announced, for example "Select Shipping for me".
-*  Tab selected state must be announced.
-*  Virtual cursor navigation can move from tab to tab without changing the active tab selection. The invoke command (e.g. VO+SPACE on Voiceover) selects the tab under the virtual cursor.
+* Tab must be announce as "Tab".
+* Tab label must be announced, for example "Select Shipping for me".
+* Tab selected state must be announced.
+* Virtual cursor navigation can move from tab to tab without changing the active tab selection. The invoke command (e.g. VO+SPACE on Voiceover) selects the tab under the virtual cursor.
 
 ### Mouse Interaction
 
@@ -165,7 +153,7 @@ WCAG Reference
 
 ## Reference
 
-[Danger! ARIA tabs] http://simplyaccessible.com/article/danger-aria-tabs/
-[Danger! Testing Accessibility with real people] https://medium.theuxblog.com/danger-testing-accessibility-with-real-people-4515f72db648
-[ARIA tabs, UI problems and standards] https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/
+* [Danger! ARIA tabs](http://simplyaccessible.com/article/danger-aria-tabs/)
+* [Danger! Testing Accessibility with real people](https://medium.theuxblog.com/danger-testing-accessibility-with-real-people-4515f72db648)
+* [ARIA tabs, UI problems and standards](https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/)
 
