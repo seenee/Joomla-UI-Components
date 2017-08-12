@@ -86,8 +86,8 @@ The aria-expanded state is used to distinguish between a Tab panel's expanded vs
 * (role=tablist + aria-multiselectable= **false**) and (focus on role=tab + aria-expanded=true) is a Tab whose panel is expanded
 * (role=tablist + aria-multiselectable= **true**) and (focus on role=tab + aria-expanded=false) is a Accordion ( **sic!**) Header whose panel is collapsed.
 
-| **Role** | **States, and Properties** | **HTML tag** | **Description** |
-| --- | ------------------ | --- | --- |
+| **Role** | **States,&nbsp;and&nbsp;Properties** | **HTML tag** | **Description** |
+| --- | --- | --- | --- |
 | **tablist** | - | - | Serves as the container for the set of tabs. |
 | **tab** | - | - | Contains title for tab panel, activates tab panel when activated. |
 | **tabpanel** | - | - | Contains the tab's associated content. |
