@@ -1,5 +1,3 @@
-**Joomla! accessible UI components**
-
 # Tabs
 
 ## What is this
@@ -10,16 +8,14 @@
 
 ## Accessibility specification
 
-Accessible tabs specification is defined in WAI-ARIA Authoring Practices 1.1.
-
-[See: 2.21 Tabs.] : https://www.w3.org/TR/wai-aria-practices-1.1/
+Accessible tabs specification is defined in [WAI-ARIA Authoring Practices 1.1 -  See 2.21 Tabs](https://www.w3.org/TR/wai-aria-practices-1.1/)
 
 ## Terms:
 
-* **tabs or tabbed Interface:**a set of tab elements and their associated tab panels.
-* **tab list:**a set of tab elements contained in a tablist element.
-* **tab:**an element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
-* **tabpanel**: ** **section of content associated with a tab header.
+* **tabs or tabbed Interface**: a set of tab elements and their associated tab panels.
+* **tab list**: a set of tab elements contained in a tablist element.
+* **tab**: an element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
+* **tabpanel**: section of content associated with a tab header.
 
 ## Design Patterns
 
