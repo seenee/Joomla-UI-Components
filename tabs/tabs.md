@@ -86,16 +86,16 @@ The aria-expanded state is used to distinguish between a Tab panel's expanded vs
 * (role=tablist + aria-multiselectable= **false**) and (focus on role=tab + aria-expanded=true) is a Tab whose panel is expanded
 * (role=tablist + aria-multiselectable= **true**) and (focus on role=tab + aria-expanded=false) is a Accordion ( **sic!**) Header whose panel is collapsed.
 
-| **Role** | **States, and Properties** | **HTML tag** | - |
-| --- | --- | --- | --- |
+| **Role** | **States, and Properties** | **HTML tag** | **Description** |
+| --- | ----------- | --- | --- |
 | **tablist** | - | - | Serves as the container for the set of tabs. |
 | **tab** | - | - | Contains title for tab panel, activates tab panel when activated. |
 | **tabpanel** | - | - | Contains the tab's associated content. |
-| - | **aria- selected** | - | The active tab element has state set to true and other tab elements have it set to false. |
+| - | **aria-selected** | - | The active tab element has state set to true and other tab elements have it set to false. |
 | - | **aria-controls** | - | Each element with role=tab has a unique name aria-controls="id" that associates the control to the appropriate element tabpanel by referencing the controlled element's id. |
-| - | **aria- labelledby** | - | Each element with role tabpanel has the property aria-labelledby referring to its associated tab element. |
-| - | **aria- haspopup** | - | If a tab element has a pop-up menu, it has the property aria-haspopup set to true. |
-| - | **aria- orientation** | - | If the tablist element is vertically oriented, it has the property aria-orientation set to vertical. The default value of aria-orientation for a tablist element is horizontal. |
+| - | **aria-labelledby** | - | Each element with role tabpanel has the property aria-labelledby referring to its associated tab element. |
+| - | **aria-haspopup** | - | If a tab element has a pop-up menu, it has the property aria-haspopup set to true. |
+| - | **aria-orientation** | - | If the tablist element is vertically oriented, it has the property aria-orientation set to vertical. The default value of aria-orientation for a tablist element is horizontal. |
 
 ### Why is it important?
 
@@ -138,7 +138,7 @@ Tabs are commonly used to reduce the need to scroll when presenting multiple sec
 * Tab titles should be short and predictable.
 * Tab buttons can contain icons, text, both, and even dropdowns.
 
-WCAG Reference
+## WCAG Reference
 
 * **1.3.1 Info and Relationships** (Level A): Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
 * **1.3.3 Sensory Characteristics** (Level A): Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.
